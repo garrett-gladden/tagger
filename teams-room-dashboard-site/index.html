@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams Room Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Teams Room Device Performance</h1>
+            <p>Real-time monitoring and analytics across your global deployment</p>
+        </header>
+        
+        <section class="filters">
+            <h2>Filters</h2>
+            <div class="filter-group">
+                <label for="country">Country</label>
+                <select id="country">
+                    <option value="All">All</option>
+                    <!-- Additional options will be populated by JavaScript -->
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="city">City</label>
+                <select id="city">
+                    <option value="All">All</option>
+                    <!-- Additional options will be populated by JavaScript -->
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="manufacturer">Manufacturer</label>
+                <select id="manufacturer">
+                    <option value="All">All</option>
+                    <!-- Additional options will be populated by JavaScript -->
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="deviceType">Device Type</label>
+                <select id="deviceType">
+                    <option value="All">All</option>
+                    <!-- Additional options will be populated by JavaScript -->
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="subnet">Subnet</label>
+                <select id="subnet">
+                    <option value="All">All</option>
+                    <!-- Additional options will be populated by JavaScript -->
+                </select>
+            </div>
+        </section>
+
+        <section class="metrics">
+            <h2>Key Metrics</h2>
+            <div class="metric-card">
+                <h3>Average Quality Score</h3>
+                <p id="avgQuality">--</p>
+            </div>
+            <div class="metric-card">
+                <h3>Poor Call Percentage</h3>
+                <p id="poorCallPct">--</p>
+            </div>
+            <div class="metric-card">
+                <h3>Devices with Issues</h3>
+                <p id="devicesWithIssues">--</p>
+            </div>
+            <div class="metric-card">
+                <h3>Geographic Coverage</h3>
+                <p id="geoCoverage">--</p>
+            </div>
+        </section>
+
+        <section class="charts">
+            <h2>Performance Charts</h2>
+            <div id="chartsContainer">
+                <!-- Charts will be rendered here by JavaScript -->
+            </div>
+        </section>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
